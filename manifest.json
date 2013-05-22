@@ -1,0 +1,17 @@
+// Images pl0x chrome extension.
+// keroserene@google.com
+{
+  "name": "imgs-pl0x",
+  "description": "Always display images from *@google.com",
+  "version": "0.1",
+  "manifest_version": 2,
+  "icons": {
+    "16": "yey.png",
+    "48": "yey.png",
+    "128": "yey.png"
+  },
+  "content_scripts": [{
+    "matches": ["https://mail.google.com/*"],
+    "js": ["show_images.js"]
+  }]
+}
